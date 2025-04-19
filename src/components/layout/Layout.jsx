@@ -9,15 +9,14 @@ import Main from '../chatbot/Main'
 function Layout({ children }) {
 
   const context = useContext(myContext)
-  const { showBot,setShowBot} = context
 
 
 
   return (
     <div className="relative">
-      {
-        showBot ? <Main/>: <></>
-      }
+      
+      <Main/>
+    
       <Navbar />
       <div className="content">
         {children}
